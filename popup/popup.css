@@ -1,0 +1,73 @@
+.container {
+  width: 400px;
+  padding: 15px;
+}
+
+.deck-selection {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.deck-selection select {
+  flex: 1;
+  padding: 8px;
+}
+
+.card-preview {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.preview-front, .preview-back {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f5f5f5;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cards-list {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.card-item {
+  padding: 10px;
+  background: #f5f5f5;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-item button {
+  padding: 4px 8px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.list-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+} 

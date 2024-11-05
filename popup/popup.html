@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Anki Card Generator</h2>
+    
+    <!-- 添加卡片组选择 -->
+    <div class="deck-selection">
+      <select id="deckSelect" aria-label="选择卡片组">
+        <option value="">选择卡片组...</option>
+      </select>
+      <button id="addDeck">新建卡片组</button>
+    </div>
+
+    <div class="card-preview">
+      <h3>预览</h3>
+      <div class="preview-front">
+        <h4>正面</h4>
+        <div id="frontPreview"></div>
+      </div>
+      <div class="preview-back">
+        <h4>背面</h4>
+        <div id="backPreview"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="generateFront">仅生成正面</button>
+      <button id="generateBack">仅生成背面</button>
+      <button id="generateBoth">生成正反面</button>
+      <button id="addToList">添加到列表</button>
+    </div>
+
+    <!-- 添加卡片列表 -->
+    <div class="cards-list">
+      <h3>当前卡片列表</h3>
+      <div id="cardsList"></div>
+      <div class="list-controls">
+        <span id="cardCount">已添加: 0张卡片</span>
+        <button id="exportCSV" disabled>导出CSV</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
